@@ -1,0 +1,4 @@
+
+function whoWins(first, second) {
+
+}
