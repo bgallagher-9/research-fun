@@ -27,7 +27,7 @@ Object.defineProperty(urgentTask, 'toString', {
   configurable: false
 })
 
-//
+// 
 // task.toString = function() {
 //   return this.title + ' ' + this.description;
 // }
