@@ -1,3 +1,5 @@
+//using node for console.log
+
 //print reverse order of array
 
 // let arr = [1, 2, 3, 4];
@@ -63,4 +65,50 @@ function max(arr) {
   console.log(max);
 }
 
-max([50, 60, 5]);
+// max([50, 60, 5]);
+
+
+const movies = [
+  {
+    movie: 'Blazing Saddles',
+    rating: '5/5',
+    hasWatched: true
+  },
+  {
+    movie: 'Space Balls',
+    rating: '5/5',
+    hasWatched: true
+  },
+  {
+    movie: 'The Little Mermaid',
+    rating: '2/5',
+    hasWatched: false
+  },
+  {
+    movie: 'The Legend of Donkey Kong',
+    rating: '3/5',
+    hasWatched: false
+  },
+  {
+    movie: 'The Netflix story: Unofficial',
+    rating: '4/5',
+    hasWatched: false
+  }
+];
+
+// console.log(movies[1].movie);
+
+function movieDeets(arr) {
+  arr.forEach(function(el, i) {
+    let watched;
+    if ( arr[i].hasWatched === true) {
+      watched = 'You have watched ';
+    }
+    else {
+      watched = 'You have not watched ';
+    }
+    console.log(watched + arr[i].movie + ' - ' + arr[i].rating + ' stars.');
+  })
+}
+
+movieDeets(movies);
